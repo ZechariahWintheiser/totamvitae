@@ -1,0 +1,25 @@
+{
+  "name": "totamvitae",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "description": "xxhash implementation in pure typescript (using tc39 bigint), supports XXH64 & XXH3-128",
+  "version": "1.0.0",
+  "scripts": {
+    "prebuild": "rm -rf ./*.js ./*.d.ts",
+    "build": "tsc",
+    "prepublishOnly": "yarn build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZechariahWintheiser/totamvitae.git"
+  },
+  "author": "LaurenHagenes",
+  "license": "BSD-2 Clause",
+  "devDependencies": {
+    "@types/node": "^12.12.21"
+  },
+  "dependencies": {
+    "buffer": "^6.0.3"
+  },
+  "homepage": "https://github.com/ZechariahWintheiser/totamvitae.git"
+}
